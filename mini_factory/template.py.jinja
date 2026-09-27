@@ -1,6 +1,6 @@
 from airflow.models import DAG
-from airflow.decorators import task
-from airflow.operators.bash import BashOperator
+from airflow.sdk import task
+from airflow.providers.standard.operators.bash import BashOperator
 from airflow.timetables.trigger import CronTriggerTimetable
 from pendulum import datetime, now, DateTime, from_format
 from airflow.providers.google.cloud.operators.cloud_run import CloudRunExecuteJobOperator
