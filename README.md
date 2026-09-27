@@ -1,5 +1,11 @@
 # mini-orchestrator
 A combination of my multiple articles about Apache Airflow and Google Cloud Platform
+Reference :
+ - Airflow DAG Factory : [Medium](https://medium.com/@chanon.krittapholchai/apache-airflow-dynamic-dag-with-jinja-ffc1c90910bf)
+ - Airflow with Idempotent RUN_DT : [Medium](https://medium.com/@chanon.krittapholchai/apache-airflow-useful-practices-idempotent-dag-6d52b1594704)
+ - Notebook job with Papermill on Cloud Run : [Medium](https://medium.com/@chanon.krittapholchai/serverless-notebook-job-with-papermill-and-google-cloud-run-job-8c48c8b5482a)
+ - Upsert BigQuery with Python : [Medium](https://medium.com/@chanon.krittapholchai/upsert-bigquerys-partition-from-pandas-dataframe-ad1437cb1d3d)
+
 
 # Concept
 
@@ -24,7 +30,7 @@ flowchart TD
 3. Run the notebook from top cell
     - [P1](pipelines/pipeline1/p1.ipynb)
     - [P2](pipelines/pipeline2/p2.ipynb)
-    
+
 *Requirements and documentation were already provided in the notebook
 
 ## With Apache Airflow and Cloud Run
