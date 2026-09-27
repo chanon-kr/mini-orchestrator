@@ -1,0 +1,24 @@
+dag_parameter :
+  dag_name : pipeline2
+  scheduler : "0 0 * * *"
+  timezone : Asia/Bangkok
+  start_date : 2026-01-01
+  max_active_runs : 1
+  catchup : True
+  tags :
+  - csv->bq
+  - p1
+operator_parameter :
+  PROJECT_ID : PROJECT_ID
+  REGION : REGION
+  GOOGLE_CLOUD_CONNECTION_ID : GOOGLE_CLOUD_CONNECTION_ID
+  JOB_NAME : JOB_NAME
+  TIMEOUT : 3600s
+  NOTEBOOK_NAME : p2.ipynb
+  NOTEBOOK_BUCKET : NOTEBOOK_BUCKET
+  GCS_PROJECT : GCS_PROJECT
+  GCS_BUCKET : GCS_BUCKET
+  GCS_FILE_PATH : GCS_FILE_PATH
+  BQ_TARGET_PROJECT : BQ_TARGET_PROJECT
+  BQ_TARGET_SCHEMA : BQ_TARGET_SCHEMA
+  BQ_TARGET_TABLE : BQ_TARGET_TABLE
