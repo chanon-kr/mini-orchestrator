@@ -24,6 +24,7 @@ flowchart TD
 3. Run the notebook from top cell
     - [P1](pipelines/pipeline1/p1.ipynb)
     - [P2](pipelines/pipeline2/p2.ipynb)
+    
 *Requirements and documentation were already provided in the notebook
 
 ## With Apache Airflow and Cloud Run
@@ -42,4 +43,5 @@ flowchart TD
 1. Run this command to change to Airflow's directory : `cd airflow`
 2. Run this command to start Airflow's containers `docker compose up -d`
 3. Open `http:localhost:8080`, log in with `airflow` and `airflow`
+
 *Or just use existing GCC
